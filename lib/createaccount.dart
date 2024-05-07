@@ -12,7 +12,18 @@ class MyAccount extends StatefulWidget {
 class _MyAccountState extends State<MyAccount> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return  Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+         Image.asset('assets/midSplash Screen logo.png'),
+         const Text("Let's Clean Together", style: TextStyle(fontWeight: FontWeight.bold, height:1.5),),
+         const Text("Join us and let's promote a healthy environment.", style: TextStyle(height: 1.5),),
+      ],
+     
+    
+
+    );
 }
 }
 

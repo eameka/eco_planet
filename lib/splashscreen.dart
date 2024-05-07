@@ -18,7 +18,12 @@ class _MysplashState extends State<Mysplash> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(
-      splash:'assets/midSplash Screen logo.png',
+      splash: Column(
+        children: [
+          Image.asset('assets/midSplash Screen logo.png'),
+         const Text('WELCOME'),
+       ],
+      ),
       backgroundColor: Colors.white,
       nextScreen: const MyAccount(),
       splashIconSize: 250,
