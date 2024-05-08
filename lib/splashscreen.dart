@@ -3,8 +3,6 @@ import 'createaccount.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
-
-
 class Mysplash extends StatefulWidget {
   const Mysplash({
     super.key,
@@ -21,8 +19,8 @@ class _MysplashState extends State<Mysplash> {
       splash: Column(
         children: [
           Image.asset('assets/midSplash Screen logo.png'),
-         const Text('WELCOME'),
-       ],
+          const Text('WELCOME'),
+        ],
       ),
       backgroundColor: Colors.white,
       nextScreen: const MyAccount(),
@@ -31,5 +29,5 @@ class _MysplashState extends State<Mysplash> {
       splashTransition: SplashTransition.slideTransition,
       pageTransitionType: PageTransitionType.leftToRightWithFade,
     );
-    }
+  }
 }

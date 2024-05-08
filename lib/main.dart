@@ -15,11 +15,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Eco-Planet',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(102, 80, 245, 116),),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color.fromARGB(102, 80, 245, 116),
+        ),
         useMaterial3: true,
       ),
-      home: const Mysplash() ,
+      home: const Mysplash(),
     );
   }
 }
-
