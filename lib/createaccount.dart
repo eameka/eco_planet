@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'houselogin.dart';
+import 'wastelogin.dart';
 
 class MyAccount extends StatefulWidget {
   const MyAccount({
@@ -43,8 +45,35 @@ class _MyAccountState extends State<MyAccount> {
             style: TextStyle(color: Colors.white),
           ),
         ),
+        
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+           showModalBottomSheet<void>(
+            context: context,
+            builder: (BuildContext context) {
+              return SizedBox(
+                height: 200,
+                child: Center(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      const Text('LOGIN'),
+                      ElevatedButton(
+                        child: const Text('Login as Household'),
+                        onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) => const MyHouseLogin(),)),
+                      ),
+                       ElevatedButton(
+                        child: const Text('Login as Waste company'),
+                        onPressed: () => Navigator.push(context,MaterialPageRoute(builder: (context) =>const MywasteLogin(), )),
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          );
+          },
           style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(Colors.green)),
           child: const Text(

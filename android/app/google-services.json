@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "132560948915",
+    "project_id": "eco-planet-e94c3",
+    "storage_bucket": "eco-planet-e94c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132560948915:android:4da394eecb16bb8cc22ac6",
+        "android_client_info": {
+          "package_name": "com.example.eco_planet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrpdLYntbOv6Z1iPKunmLl5cvx0Baub-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

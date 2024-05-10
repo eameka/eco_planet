@@ -1,8 +1,17 @@
 {
     "cSpell.ignoreWords": [
         "ARGB",
+        "Cupertino",
         "Mysplash",
         "createaccount",
+        "houselogin",
         "splashscreen"
+    ],
+    "cSpell.words": [
+        "firestore",
+        "Heya",
+        "Housename",
+        "Mywaste",
+        "wastelogin"
     ]
 }
