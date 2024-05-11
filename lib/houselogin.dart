@@ -14,11 +14,11 @@ class _MyHouseLoginState extends State<MyHouseLogin> {
   final _housenameController = TextEditingController();
   final _passwordController = TextEditingController();
 
- @override 
-    void initState(){ 
-      super.initState(); 
-      passwordVisible=true; 
-    }   
+  @override
+  void initState() {
+    super.initState();
+    passwordVisible = true;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -79,11 +79,11 @@ class _MyHouseLoginState extends State<MyHouseLogin> {
                   border: const OutlineInputBorder(),
                   suffixIcon: IconButton(
                     onPressed: () {
-                       setState( 
-                          () { 
-                            passwordVisible = !passwordVisible; 
-                          }, 
-                        ); 
+                      setState(
+                        () {
+                          passwordVisible = !passwordVisible;
+                        },
+                      );
                     },
                     icon: Icon(passwordVisible
                         ? Icons.visibility
