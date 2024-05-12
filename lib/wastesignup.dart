@@ -10,10 +10,9 @@ class MyHouseSignup extends StatefulWidget {
 }
 
 class _MyHouseSignupState extends State<MyHouseSignup> {
-  final _householdController = TextEditingController();
+  final _wasteController = TextEditingController();
   final _passwordController = TextEditingController();
   final _mailController = TextEditingController();
-  final _addressController = TextEditingController();
   bool passwordVisible = false;
 
 @override 
@@ -68,9 +67,9 @@ class _MyHouseSignupState extends State<MyHouseSignup> {
           ),
           const SizedBox(height: 10),
           TextFormField(
-            controller: _householdController,
+            controller: _wasteController,
             decoration: const InputDecoration(
-              labelText: 'Household Username',
+              labelText: 'Waste Company Username',
               prefixIcon: Icon(Icons.person),
               border: OutlineInputBorder(),
             ),
@@ -103,15 +102,6 @@ class _MyHouseSignupState extends State<MyHouseSignup> {
             decoration: const InputDecoration(
               labelText: 'E-mail',
               prefixIcon: Icon(Icons.mail),
-              border: OutlineInputBorder(),
-            ),
-          ),
-          const SizedBox(height: 10),
-          TextFormField(
-            controller: _addressController,
-            decoration: const InputDecoration(
-              labelText: 'Household address',
-              prefixIcon: Icon(Icons.location_city),
               border: OutlineInputBorder(),
             ),
           ),

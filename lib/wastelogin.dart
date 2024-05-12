@@ -89,7 +89,7 @@ class _MywasteLoginState extends State<MywasteLogin> {
                     icon: Icon(passwordVisible
                         ? Icons.visibility
                         : Icons.visibility_off),
-                  )),
+                  ),),
             ),
             const SizedBox(height: 15),
             ElevatedButton(child: const Text('Login'), onPressed: () {}),
