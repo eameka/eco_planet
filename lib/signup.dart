@@ -15,6 +15,7 @@ class _MyHouseSignupState extends State<MyHouseSignup> {
   final _mailController = TextEditingController();
   final _addressController = TextEditingController();
   bool passwordVisible = false;
+  bool _isChecked = false;
 
 @override 
     void initState(){ 
@@ -116,6 +117,16 @@ class _MyHouseSignupState extends State<MyHouseSignup> {
             ),
           ),
           const SizedBox(height: 10),
+           CheckboxListTile(
+              title: const Text('I agree to the terms and conditions'),
+              value: _isChecked,
+              onChanged: (value) {
+                setState(() {
+                  _isChecked = true;
+                });
+              },
+            ),
+             const SizedBox(height: 15),
           ElevatedButton(
             child: const Text('Sign up'),
             onPressed: () {},
