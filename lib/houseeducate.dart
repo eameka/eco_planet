@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class Educate extends StatefulWidget {
   const Educate({
@@ -11,6 +10,7 @@ class Educate extends StatefulWidget {
 }
 
 class _EducateState extends State<Educate> {
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
