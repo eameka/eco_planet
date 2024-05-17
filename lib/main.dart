@@ -4,7 +4,13 @@ import 'package:firebase_core/firebase_core.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+      options: const FirebaseOptions(
+    apiKey: "AIzaSyD5C-ha9Zkz0hwCdfU6LiPufDPvqLQhiNI",
+    projectId: "eco-planet-e94c3",
+    messagingSenderId: "132560948915",
+    appId: "1:132560948915:web:cd07d54aaab7e8ecc22ac6",
+  ));
   runApp(const MyApp());
 }
 
